@@ -8,7 +8,7 @@ This is the GIT repository for a `PHP` Docker image.
   - `7.1-fpm-alpine-magento2-full`
 
 ## Initializing Scripts
-When a container is started for the first time, the entrypoint script will execute `.sh` mounted to the `/docker-entrypoint-initphp.d` directory. 
+When a container is started for the first time, the entrypoint script will execute `.sh` files mounted to the `/docker-entrypoint-initphp.d` directory. 
 
 >docker run --name composer -v /my/own/scripts/:/docker-entrypoint-initphp.d/ -d lstellway/php:7.0-magento2-full
 
