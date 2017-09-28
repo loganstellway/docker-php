@@ -1,5 +1,5 @@
-# About this Repo
-This is the GIT repository for a `PHP` Docker image. 
+# PHP Docker Images
+This is the repository for `PHP` Docker images based on the official [`PHP`](https://store.docker.com/images/php) Docker images. 
 
 ## Tags
   - [`7.0-fpm-alpine-magento2`](https://github.com/loganstellway/docker-php/blob/master/7.0/magento2/alpine/Dockerfile)
