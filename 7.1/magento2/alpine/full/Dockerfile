@@ -1,4 +1,4 @@
-FROM php:7.0-fpm-alpine
+FROM php:7.1-fpm-alpine
 
 # Install Dependencies
 RUN apk add --update --no-cache \
@@ -41,7 +41,7 @@ RUN curl -s -f -L -o /tmp/installer.php https://raw.githubusercontent.com/compos
 
 # Create entrypoint for custom shell commands
 RUN mkdir /docker-entrypoint-initphp.d
-COPY docker-entrypoint.sh /docker-entrypoint.sh
+COPY ../../../../misc/docker-entrypoint.sh /docker-entrypoint.sh
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
 CMD ["php-fpm"]

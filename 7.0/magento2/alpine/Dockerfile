@@ -20,7 +20,7 @@ RUN apk add --update --no-cache \
 
 # Create entrypoint for custom shell commands
 RUN mkdir /docker-entrypoint-initphp.d
-COPY docker-entrypoint.sh /usr/local/bin/
+COPY ../../../misc/docker-entrypoint.sh /usr/local/bin/
 RUN ln -s /usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
 ENTRYPOINT ["docker-entrypoint.sh"]
 
