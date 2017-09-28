@@ -41,7 +41,7 @@ RUN curl -s -f -L -o /tmp/installer.php https://raw.githubusercontent.com/compos
 
 # Create entrypoint for custom shell commands
 RUN mkdir /docker-entrypoint-initphp.d
-COPY ../../../../misc/docker-entrypoint.sh /docker-entrypoint.sh
+COPY docker-entrypoint.sh /docker-entrypoint.sh
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
 CMD ["php-fpm"]
