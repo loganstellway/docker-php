@@ -1,11 +1,11 @@
 # About this Repo
 This is the GIT repository for a `PHP` Docker image. 
 
-## Versions
-  - `7.0-magento2-alpine`
-  - `7.0-magento2-alpine-full`
-  - `7.1-magento2-alpine`
-  - `7.1-magento2-alpine-full`
+## Tags
+  - `7.0-fpm-alpine-magento2`
+  - `7.0-fpm-alpine-magento2-full`
+  - `7.1-fpm-alpine-magento2`
+  - `7.1-fpm-alpine-magento2-full`
 
 ## Initializing Scripts
 When a container is started for the first time, the entrypoint script will execute `.sh` mounted to the `/docker-entrypoint-initphp.d` directory. 
