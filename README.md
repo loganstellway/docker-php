@@ -2,10 +2,10 @@
 This is the GIT repository for a `PHP` Docker image. 
 
 ## Tags
-  - `7.0-fpm-alpine-magento2`
-  - `7.0-fpm-alpine-magento2-full`
-  - `7.1-fpm-alpine-magento2`
-  - `7.1-fpm-alpine-magento2-full`
+  - [`7.0-fpm-alpine-magento2`](https://github.com/loganstellway/docker-php/blob/master/7.0/magento2/alpine/Dockerfile)
+  - [`7.0-fpm-alpine-magento2-full`](https://github.com/loganstellway/docker-php/blob/master/7.0/magento2/alpine/full/Dockerfile)
+  - [`7.1-fpm-alpine-magento2`](https://github.com/loganstellway/docker-php/blob/master/7.1/magento2/alpine/Dockerfile)
+  - [`7.1-fpm-alpine-magento2-full`](https://github.com/loganstellway/docker-php/blob/master/7.1/magento2/alpine/full/Dockerfile)
 
 ## Initializing Scripts
 When a container is started for the first time, the entrypoint script will execute `.sh` files mounted to the `/docker-entrypoint-initphp.d` directory. 
@@ -29,4 +29,4 @@ Images have alternate version tags suffixed with `-full` that include further de
   - [Composer](https://getcomposer.org/)
 
 ## Issues / Suggestions
-Please feel free to fork, contribute and report issues!
+Please feel free to fork, [contribute](https://github.com/loganstellway/docker-php) and [report issues](https://github.com/loganstellway/docker-php/issues)!
