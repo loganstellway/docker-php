@@ -16,7 +16,7 @@ RUN apk add --update --no-cache \
        gd --with-png-dir=/usr/include/ --with-jpeg-dir=/usr/include/ --with-webp-dir=/usr/include/ --with-freetype-dir=/usr/include/ \
     && docker-php-ext-install -j$(getconf _NPROCESSORS_ONLN) \
        # intl iconv mcrypt gd pdo_mysql zip soap json xsl mbstring simplexml xml opcache
-       gd mcrypt xsl intl pdo_mysql zip soap opcache
+       gd mcrypt xsl intl pdo_mysql mysqli zip soap opcache
 
 # Install Composer
 RUN echo "memory_limit=-1" > "$PHP_INI_DIR/conf.d/memory-limit.ini" \
